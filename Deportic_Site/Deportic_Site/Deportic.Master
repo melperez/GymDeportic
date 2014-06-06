@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Deportic.master.cs" Inherits="Deportic_Site.Deportic" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .menu
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .menu
+        {
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title" align="center" dir="rtl" style="position: relative; top: 2px;
+                right: -27px;">
+                <asp:Image ID="Image2" runat="server" Height="63px" ImageUrl="Images/FitnessIcon.png" /></div>
+            <div class="title" align="center" style="position: relative; top: 7px; left: -79px;
+                color: #FFFFFF; font-size: x-large;">
+                GYM&nbsp; DEPORTIC WEB</div>
+            <div class="loginDisplay">
+                <%--<div id="DivA2" visible="false" runat="server">
+                    [<a href="~/Views/Login.aspx" id="A2" runat="server">&nbsp;Cerrar Sesion</a>]
+                </div>--%>
+            </div>
+            <div class="clear hideSkiplink">
+                <div style="position: relative; top: -2px; left: 27px; width: 919px;" align="center"
+                    dir="ltr">
+                    <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="False"
+                        IncludeStyleBlock="False" Orientation="Horizontal" 
+                        Font-Names="Century Gothic" >
+                        <Items>
+                            <asp:MenuItem Text="Inicio" Value="Inicio" 
+                                Selected="True">
+                                <asp:MenuItem NavigateUrl="~/Views/Login.aspx" Text="Iniciar Sesión" 
+                                    Value="Iniciar Sesión"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Administrar Perfiles" Value="Administrar Perfiles">
+                                <asp:MenuItem Text="Deportistas" Value="Deportistas">
+                                    <asp:MenuItem Text="Administrar Deportistas"
+                                        Value="Administrar Deportistas">
+                                        <asp:MenuItem Text="Registrar Nuevo Deportista" 
+                                            Value="Registrar Nuevo Deportista" 
+                                            NavigateUrl="~/Views/RegistroDeportista.aspx">
+                                        </asp:MenuItem>
+                                        <asp:MenuItem Text="Actualizar Deportistas" Value="Actualizar Deportistas">
+                                        </asp:MenuItem>
+                                    </asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Profesionales" Value="Profesionales">
+                                    <asp:MenuItem Text="Administrar Profesionales"
+                                        Value="Administrar Profesionales">
+                                        <asp:MenuItem Text="Registrar Profesional" Value="Registrar Profesional" 
+                                            NavigateUrl="~/Views/RegistroProfesional.aspx"></asp:MenuItem>
+                                        <asp:MenuItem Text="Actualizar Profesional" Value="Actualizar Profesional"></asp:MenuItem>
+                                    </asp:MenuItem>
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Administrar Maquinas" Value="Administrar Máquinas">
+                                <asp:MenuItem Text="Nueva Máquina" Value="Nueva Máquina" 
+                                    NavigateUrl="~/Views/RegistroMaquina.aspx?Agregar=true"></asp:MenuItem>
+                                <asp:MenuItem Text="Actualizar datos Máquinas" 
+                                    Value="Actualizar datos Máquinas" 
+                                    NavigateUrl="~/Views/RegistroMaquina.aspx?Agregar=false">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Rutinas" Value="Rutinas">
+                                <asp:MenuItem Text="Agregar Ejercicio" Value="Agregar Ejercicio"></asp:MenuItem>
+                                <asp:MenuItem Text="Consultar Ejercicios" Value="Consultar Ejercicios">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Desarrollo Físico" Value="Desarrollo Físico">
+                                <asp:MenuItem Text="Registrar Desarrollo" Value="Registrar Desarrollo">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Contacto" Value="Contacto" NavigateUrl="~/About.aspx" 
+                                PopOutImageUrl="~/Images/4.jpg"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <p class="style1" style="font-size: large">
+                    <strong>GYM DEPORTIC WEB</strong></p>
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="footer">
+        <span style="color: rgb(51, 51, 51); font-family: sans-serif; font-size: 12px; font-style: normal;
+            font-variant: normal; font-weight: normal; letter-spacing: 1.152000069618225px;
+            line-height: 19.584001541137695px; orphans: auto; text-align: center; text-indent: 0px;
+            text-transform: uppercase; white-space: normal; widows: auto; word-spacing: 0px;
+            -webkit-text-stroke-width: 0px; background-color: rgb(245, 245, 236); display: inline !important;
+            float: none;">COPYRIGHT © 2014. ALL RIGHTS RESERVED</span></div>
+    </form>
+</body>
+</html>

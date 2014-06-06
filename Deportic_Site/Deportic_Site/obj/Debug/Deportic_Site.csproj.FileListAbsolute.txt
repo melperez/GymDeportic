@@ -1,0 +1,5 @@
+C:\Users\mperez\Documents\Visual Studio 2010\Projects\Deportic_Site\Deportic_Site\bin\Deportic_Site.dll
+C:\Users\mperez\Documents\Visual Studio 2010\Projects\Deportic_Site\Deportic_Site\bin\Deportic_Site.pdb
+C:\Users\mperez\Documents\Visual Studio 2010\Projects\Deportic_Site\Deportic_Site\obj\Debug\Deportic_Site.dll
+C:\Users\mperez\Documents\Visual Studio 2010\Projects\Deportic_Site\Deportic_Site\obj\Debug\Deportic_Site.pdb
+C:\Users\mperez\Documents\Visual Studio 2010\Projects\Deportic_Site\Deportic_Site\obj\Debug\Deportic_Site.csprojResolveAssemblyReference.cache
